@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid transparent;
+    padding:10px;
+    max-width: 480px;
+    width: 80%;
+    margin:50px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #cecece;
+}
+
+form{
+    margin:0 auto;
+    border: 1px solid transparent;
+    width: 80%;
+}
+
+.namebox{
+    margin:20px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: 80%;
+}
+
+.namebox label{
+    margin: auto;
+    font-weight: bold;
+}
+
+.namebox input{
+    height: 50px;
+    width:100%;
+    border-radius: 7px;
+    border:1px solid transparent;
+    background-color: #cecece;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.namebox button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgb(6, 34, 6);
+    border-radius: 7px;
+    border:1px solid transparent;
+    color: white;
+    font-weight: bold;
+    width:100%;
+}
+
