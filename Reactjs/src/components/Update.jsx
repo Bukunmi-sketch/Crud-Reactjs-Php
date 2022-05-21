@@ -15,7 +15,7 @@ function Update() {
     },[id]);
 
     function getUsers(){
-        axios.get(`http://localhost/websites/react-crud/Controllers/singleusercontroller.php/?id=${id}` ).then(function(response){
+        axios.get(`http://localhost/crud-reactjs-php/react-crud/Api/Controllers/singleusercontroller.php/?id=${id}` ).then(function(response){
             //console.log(response.data[`${input.id}`]);
             setInputs(response.data);
             console.log(response.data);
@@ -31,7 +31,7 @@ function Update() {
 
    const handlesubmit=(event)=>{
         event.preventDefault();
-        axios.put(`http://localhost/websites/react-crud/Controllers/updatecontroller.php/?id=${id}`, input).then(function(response){
+        axios.put(`http://localhost/crud-reactjs-php/react-crud/Api/Controllers/updatecontroller.php/?id=${id}`, input).then(function(response){
             console.log(response.data);
             navigate('/');
         })

@@ -25,7 +25,7 @@ function Create() {
                      
             axios({
                 method:"POST",
-                url:"http://localhost/websites/react-crud/Controllers/createcontroller.php",
+                url:"http://localhost/crud-reactjs-php/react-crud/Api/Controllers/createcontroller.php",
                 data:formData,
                 config: { headers: { 'Content-Type' : 'multipart/form-data'}}
             }).then(function(response){

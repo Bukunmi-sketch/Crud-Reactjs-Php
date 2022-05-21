@@ -12,15 +12,15 @@ function List(){
     }, []); 
 
     function getUsers(){
-        axios.get("http://localhost/websites/react-crud/Controllers/getuserscontroller.php").then(function(response){
-            console.log(response.data);
+        axios.get("http://localhost/crud-reactjs-php/react-crud/Api/Controllers/getuserscontroller.php").then(function(response){
+            console.log(response.data)
             setUsers(response.data)
         })
     }
 
    function deleteUser(id){
        if(window.confirm('Are u sure you want to delete this?')){
-        axios.delete(`http://localhost/websites/react-crud/Controllers/deletecontroller.php/?id=${id}`).then(function(response){
+        axios.delete(`http://localhost/crud-reactjs-php/Api/Controllers/deletecontroller.php/?id=${id}`).then(function(response){
             if(response.status === 200){
                // alert('user deleted');
             console.log(response.data);
